@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
 import './Business.css';
 
-const business = {
-  imageSrc: "./pizza.webp",
-  name: "MarginOtto Pizzeria",
-  address: "1010 Paddington Way",
-  city: "Flavortown",
-  state: "NY",
-  zipCode: "10101",
-  category: "Italian",
-  rating: 4.5,
-  reviewCount: 90,
-};
-
-const {imageSrc, name, address, city, state, zipCode, category, rating, reviewCount} = business;
 class Business extends Component {
+  
+  
   render() {
+    const {imageSrc, name, address, city, state, zipCode, category, rating, reviewCount} = this.props.business;
     return (
       <div className="Business">
       <div className="image-container">
